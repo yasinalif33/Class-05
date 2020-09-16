@@ -1,0 +1,372 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+
+/*global css file here*/
+*{
+	margin-bottom: 0;
+	padding: 0;
+}
+h1,h2{
+	font-family: 'Alfa Slab One', cursive;
+}
+h3,h4,h5,h6{
+	font-family: 'Bebas Neue', cursive;
+}
+p,span,input{
+	font-family: 'Montserrat', sans-serif;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+
+/*header file css*/
+.header{
+	width: 100%;
+	background: url(../img/banner.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+.menu-item{
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+.menu-item ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 20px;
+}
+.menu-item ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 600;
+	color: #3d2514;
+	font-size: 18px;
+	letter-spacing: 3px;
+	transition: 0.5s ease-in-out;
+}
+.menu-item ul li a:hover{
+	color: red;
+	transition: 0.5s ease-in-out;
+}
+
+/*banner css*/
+.banner-text{
+	display: table-cell;
+	vertical-align: middle;
+	height: 60vh;
+}
+.text h3{
+	border: 2px dashed #3d2514;
+	display: inline-block;
+	padding: 5px 10px;
+	font-weight: 400;
+}
+.text h1{
+	font-size: 83px;
+	color: #3d2514;
+	letter-spacing: 4px;
+	text-shadow: 5px 3px white;
+}
+.text h2{
+	font-size: 43px;
+	color: #3d2514;
+	letter-spacing: 4px;
+	text-shadow: 3px 2px white;
+}
+
+/*blog gallery*/
+.blog-gallery{
+	width: 100%
+	padding: 70px 0;
+}
+.gallery{
+	display: flex;
+}
+.left{
+	position: relative;
+	padding: 15px;
+}
+.left h4{
+	font-size: 24px;
+}
+.left h3{
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+.right{
+	padding: 15px;
+}
+.post-text{
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	color: white;
+}
+.top{
+	margin-bottom: 28px;
+}
+.top,.bottom{
+	position: relative;
+}
+.blog-gallery .button{
+	text-align: center;
+	margin: 10px 0;
+}
+.blog-gallery .button button{
+	padding: 16px 20px;
+	border: 1px solid orange;
+	background: orange;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+/*blog item css*/
+.blog-item{
+	width: 100%;
+}
+.blog-item .title{
+	text-align: center;
+}
+.blog-item .title h1{
+	font-size: 43px;
+	color: #3d2514;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.item-gallery{
+	margin: 40px 0;
+	display: flex;
+}
+.item{
+	padding: 15px;
+	text-align: center;
+}
+.item h3{
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.item p{
+	margin-bottom: 30px;
+}
+.item button{
+	padding: 15px 25px;
+	margin-top: 20px;
+	background: red;
+	border: 1px solid red;
+	color: white;
+	font-weight: 900;
+	letter-spacing: 2px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+/*event css*/
+.event-body{
+    width: 100%;
+    display: flex;
+}
+.event-text{
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px;
+}
+.event-text h4{
+    font-size: 26px;
+    text-align: left;
+    letter-spacing: 2px;
+    color: #3d3d3d;
+}
+.event-text h3{
+    font-size: 43px;
+    text-align: left;
+    letter-spacing: 2px;
+    color: #3d2514;
+}
+.event-text p{
+    text-align: left;
+    font-size: 18px;
+    padding-right: 50px;
+    letter-spacing: 1px;
+    color: #3d3d3d;
+}
+.event-img{
+    width: 50%;
+    margin-top: 60px;
+}
+.owl-nav{
+	display: none;
+}
+.owl-dots{
+	position: absolute;
+    bottom: 10px;
+    left: 9px;
+    zoom: 1.5;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffc045;
+}
+.owl-stage-outer{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*reservation css*/
+.reservation{
+    width: 100%;
+    padding-top: 100px;
+    margin-top: 30px;
+    background: url(../img/burger-5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.booking{
+	text-align: center;
+}
+.book{
+    padding: 50px 0;
+}
+.book h3{
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3d2514;
+}
+.book h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.booking-form{
+    width: 100%;
+    text-align: center;
+}
+input{
+    width: 350px;
+    padding: 15px 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    margin: 15px;
+}
+.people{
+	margin-left: -405px;
+}
+.book-button{
+    width: 372px;
+    padding: 10px 35px;
+    font-size: 25px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    border: none;
+    background: red;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: 17px;
+    margin-top: -70px
+}
+.book-button:hover{
+	cursor: pointer;
+}
+
+/*footer css*/
+.footer{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.footer-img{
+    background: url(../img/bottom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info .left{
+    width: 50%;
+    padding: 20px 0;
+}
+.logo{
+    width: 100%;
+    margin-left: 20px;
+}
+.logo img{
+    margin-bottom: 30px;
+}
+.logo p{
+    padding: 0px 0px;
+    font-size: 15px;
+    color: #fff;
+}
+.footer-info .right{
+    width: 35%;
+    margin-top: 140px;
+}
+.icon-1{
+    margin-bottom: 10px;
+}
+.right i{
+    font-size: 60px;
+    color: #fff;
+}
+.right h4{
+    margin-left: 30px;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 16px;
+    font-weight: 500;
+}
+.icon-1, .icon-2{
+    display: flex;
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.rights{
+    color: #fff;
+    margin-left: 20px;
+}
+p, span, input{
+    font-family: 'Montserrat', sans-serif;
+}
+.social-icons{
+    text-align: center;
+    margin-right: 50px;
+    margin-bottom: -30px;
+}
+.social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.social-icons ul li i{
+    color: black;
+    font-size: 35px;
+    padding-top: 7px;
+}
